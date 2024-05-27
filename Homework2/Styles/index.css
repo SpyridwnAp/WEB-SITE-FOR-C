@@ -1,0 +1,448 @@
+body, html{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+    color: black;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/*  WEBTWOANDAHALFCOLOURS
+    header-color: #17252A
+    nav-color: #2B7A78
+    background-color: #3AAFA9
+    hover-color: #DEF2F1
+    letter-color: #FEFFFF
+*/
+
+header{
+    grid-area: h;
+    background-color: lightseagreen;
+    color: whitesmoke;
+    padding: 2px 5px;
+    text-align: left;
+    display: inline;
+}
+header a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.header_logo{
+    width: 122px;
+    height: 112px;
+    float: left;
+    border: #595959 solid 2px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+main{
+    grid-area: m;
+}
+main a{
+    color: black;
+}
+
+nav{
+    grid-area: n;
+}
+
+section{
+    grid-area: s;
+}
+
+aside{
+    grid-area: a;
+}
+
+aside a{
+    color: black;
+}
+
+footer{
+    grid-area: f;
+    background-color: #666666;
+    color: whitesmoke;
+    padding: 5px;
+}
+
+footer a{
+    color: whitesmoke;
+}
+
+/*
+    Ειναι για να κανει float το menu
+*/
+[id*="menu_"]
+{
+    float: none;
+}
+
+.menu{
+    background-color: #595959;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    font-size: 1.0rem;
+}
+
+.menu a{
+    float: left;
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 10px 12px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.1em;
+    min-width: 100px;
+}
+
+.menu a.active{
+    background-color: lightseagreen;
+    color: whitesmoke;
+}
+
+/*
+    Οτι εχει το drop ειναι για το dropdown menu.
+    Δειτε link: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp.
+    Εχουν αλλαξει και τα αντιστοιχα αρχεια(visitormenu, menu, modmenu, adminmenu, login & sign-up).
+    Υπαρχει και μια αλλαγη στο loadmenu.js ειναι για το fa.
+*/
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {  
+    font-size: 1.1em;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 12px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    min-width: 130px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #A6A6A6;
+    min-width: 130px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    /* text-align: left; */
+}
+
+.menu a:hover, .dropdown:hover .dropbtn{
+    background-color: #A6A6A6;
+}
+.dropdown-content a:hover {
+    background-color: #595959;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.article{
+    padding: 0% 5%;
+    word-wrap:break-word;
+}
+
+.aside_links_list{
+    background-color: #A6A6A6;
+    color: black;
+    border: 2px solid #595959;
+    border-radius: 8px;
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+    margin-bottom:20px;
+}
+
+video{
+    width: 100%;
+    height: 270px;
+}
+
+img{
+    width: 100%;
+}
+
+pre{
+    white-space: pre-wrap;
+    font-size: 1.0rem;
+    font-family: 'Trebuchet MS';
+}
+
+.img_prof{
+    width: 50%;
+    margin-right: 10px;
+    float: left;
+}
+
+.img_book{
+    width:35%;
+    padding: 10px;
+    float:right;
+}
+
+.history_tb, .questions_tb {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 15px;
+    overflow-x: auto;
+}
+
+.questions_tb th, td{
+    text-align: left;
+    border-bottom: 1px solid #3AAFA9;
+    font-size: 0.7em;
+    width: 100%;
+}
+
+.questions_tb th{
+    background-color: #3AAFA9;
+    color: whitesmoke;
+}
+
+.questions_tb td [id*='q_']
+{
+    width: 50%;
+}
+
+.questions_tb td [id*='reg_']
+{
+    width: 90px;
+}
+
+.questions_tb td [id*='answer_']
+{
+    width: 70%;
+}
+
+.history_tb th, td {
+    text-align: left;
+    border-bottom: 1px solid #3AAFA9;
+    font-size: 0.7em;
+    width: 100%;
+}
+
+
+
+.history_tb th{
+    background-color: #3AAFA9;
+    color: whitesmoke;
+}
+
+
+tr:hover{
+    background-color: #c3c3c3;
+}
+
+.container{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: 
+                "h h h h h h h h"
+                "n n n n n n n n"
+                "m m m m m m m m"
+                "m m m m m m m m"
+                "s s s s s s s s"
+                "a a a a a a a a"
+                "f f f f f f f f";
+}
+
+/**
+    Αυτα τα δυο media γινονται γιατι θα πρεπει να πειραξουμε τα αρχικα media
+    ισως στο μελλον να το κανουμε μεσω τον αλλων 
+*/
+
+@media screen and (max-width: 800px){
+    /*Το :not() ειναι τι css και παιρνει ολα τα elements που δεν ειναι πρωτο-παιδι*/
+    .menu a:not(:first-child), .dropdown .dropbtn{
+        display: none;
+    }
+
+    .menu a.icon{
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px){
+    /* Παιρνει την την menu & responsive και τα τοποθετει σωστα στο div*/
+    .menu.responsive {position: relative;}
+
+    /*Παιρνει την την menu & responsive & icon και τα τοποθετει σωστα στο div. 
+    Το right & top ειναι για να γινει ακριβως στην θεση που θελουμε*/
+    .menu.responsive .icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .menu.responsive a{
+        float: none;
+        display: block;
+        /* text-align: left; */
+    }
+
+    .menu.responsive .dropdown {
+        float: none;
+    }
+
+    .menu.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .menu.responsive .dropdown .dropbtn{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .container{
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+                    "h h h h h h h h"
+                    "n n n n n n n n"
+                    "m m m m m m m m"
+                    "m m m m m m m m"
+                    "s s s s s s s a"
+                    "s s s s s s s a"
+                    "f f f f f f f f";
+    }
+
+    
+
+    .menu .icon{
+        display: none;
+    }
+
+    .img_book{
+        width:35%;
+    }
+
+    .article{
+        padding: 0% 10%;
+        text-align: left;
+    }
+
+    video{
+        width: 480px;
+        height: 270px;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    [id*="menu_"]
+    {
+        float: right !important;
+        /* margin-right: 10px; */
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .container{
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+                    "h h h h h h h h"
+                    "n n n n n n n n"
+                    "m m m m m m m m"
+                    "m m m m m m m m"
+                    "s s s s s s a a"
+                    "s s s s s s a a"
+                    "f f f f f f f f";
+    }
+
+    .img_book{
+        width:15%;
+        padding: 10px 25px;
+    }
+
+    .article{
+        padding: 0% 10%;
+        text-align: left;
+        clear: both;
+    }
+
+    video{
+        width: 480px;
+        height: 270px;
+    }
+
+    img{
+        width: 922px;
+    }
+
+    .img_prof{
+        float: none;
+    }
+
+    .history_tb, .questions_tb
+    {
+        width: 90%;
+        margin: 0px 5%;
+        margin-bottom: 15px;
+        border: 1px solid #3AAFA9;
+    }
+
+    .history_tb th, td {
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #3AAFA9;
+        font-size: 1em;
+        width: 50%;
+    }
+    .history_tb th ,.questions_tb th
+    {
+        padding: 8px;
+    }
+
+    .questions_tb th, td{
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #3AAFA9;
+        font-size: 1em;
+        width: 50%;
+    }
+
+    [id*="menu_"] 
+    {
+        float: right !important;
+    }
+}

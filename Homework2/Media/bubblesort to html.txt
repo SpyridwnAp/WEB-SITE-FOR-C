@@ -1,0 +1,29 @@
+&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+
+
+#include &lt;stdio.h&gt;<br><br>
+{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;int array[100], n, c, d, swap;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;printf("Enter number of elements\n");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;scanf("%d", &n);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;printf("Enter %d integers\n", n);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for (c = 0; c < n; c++)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scanf("%d", &array[c]);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for (c = 0 ; c < n - 1; c++)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (d = 0 ; d < n - c - 1; d++)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (array[d] > array[d+1])<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;swap = array[d];<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array[d] = array[d+1];<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array[d+1] = swap;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;printf("Sorted list in ascending order:\n");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for (c = 0; c < n; c++)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("%d\n", array[c]);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+}<br>

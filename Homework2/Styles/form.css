@@ -1,0 +1,81 @@
+[id*="form_"]{
+    display: block;
+    text-align: center;
+    margin: 10px;
+    font-size: 1rem;
+}
+
+.text_field{
+    background-color: #E0E0E0;
+    margin: 10px auto;
+    display: block;
+    outline: none;
+    width: 160px;
+    border: 2px solid lightseagreen;
+    border-radius: 8px;
+    padding: 3px;
+    transition: all .1s;
+}
+
+.text_field:focus{
+    width: 190px;
+    transition: all .1s;
+}
+
+#user_gender_id, #quiz_dif_id, #quiz_type_id{
+    width: 170px;
+}
+
+#user_date_id{
+    width: 160px;
+}
+
+#user_photo_id{
+    width: 160px
+}
+
+
+
+#submit_btn{
+    background-color:lightseagreen;
+    color: whitesmoke;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 3px 10px;
+    margin: 15px;
+    font-size: 14px;
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+    transition: all .2s;
+}
+
+#submit_btn:hover{
+    color: black;
+    border-color: lightseagreen;
+    background-color: #E0E0E0;
+    transition: all .2s;
+}
+
+#results{
+    margin-bottom: 15px;
+}
+
+ol{
+    text-align: left;
+    margin: 0% 5%;
+}
+
+.display_down{
+    display: block;
+    text-align: left;
+    justify-items: left;
+}
+.no_decor{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+[class*='question_']{
+    background-color: yellow;
+}

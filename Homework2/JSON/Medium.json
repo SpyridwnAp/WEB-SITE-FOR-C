@@ -1,0 +1,77 @@
+[
+    {
+        "question": "Οι παράμετροι περνιούνται στις συναρτήσεις πάντα με τιμή(pass-by-value).",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correctAnswers": "a",
+        "type": "radio",
+        "check": "True"
+    },
+    {
+        "question": "Σε μία εντολή μπορεί να γίνουν παραπάνω από μια εκχωρήσεις τιμών.",
+        "answers": {
+            "a": "True",
+            "b": "False"
+        },
+        "correctAnswers": "a",
+        "type": "radio",
+        "check": "False"
+    },
+    {
+        "question": "Η C αποκαλείτε :",
+        "answers": {
+            "a": "Φορητή συμβολική γλώσσα.",
+            "b": "Συμβολική γλώσσα υψηλού επιπέδου.",
+            "c": "C",
+            "d": "Όλα τα παραπάνω."
+        },
+        "correctAnswers": "d",
+        "type": "radio",
+        "check": "True"
+    },
+    {
+        "question": "Επέλεξε τους τύπους λογικών σχέσεων:",
+        "answers": {
+            "a": "||",
+            "b": "&&",
+            "c": "!!",
+            "d": ">"
+        },
+        "correctAnswers": [
+            "a",
+            "b"
+        ],
+        "type": "checkbox",
+        "check": "False"
+    },
+    {
+        "question": "Είναι δυνατή η άμεση προσπέλαση _____ επιπέδου στη μνήμη του υπολογιστή με τη χρήση ____.",
+        "answers": [],
+        "correctAnswers": "χαμηλού δεικτών",
+        "type": "text_strict",
+        "check": "True"
+    },
+    {
+        "question": "Οι ____ σε συναρτήσεις και δεδομένα επιτρέπουν την υλοποίηση ____ στην πράξη",
+        "answers": [],
+        "correctAnswers": "δείκτες πολυμορφισμού",
+        "type": "text_strict",
+        "check": "True"
+    },
+    {
+        "question": "Ανέφερε μερικές γλώσσες που έχουν επηρεαστεί άμεσα ή έμμεσα από την C:",
+        "answers": {},
+        "correctAnswers": "Java Python Cpp",
+        "type": "text_free",
+        "check": "True"
+    },
+    {
+        "question": "Δεν υπάρχει ιδιαίτερος τύπος για ____ τα οποία παραδοσιακά υλοποιούνται και αντιμετωπίζονται σαν πίνακες από χαρακτήρες και έχουν έναν μηδενικό χαρακτήρα να σημαδεύει το τέλος τους (null-terminated arrays of characters).",
+        "answers": {},
+        "correctAnswers": "string αλφαριθμητικά",
+        "type": "text_free",
+        "check": "True"
+    }
+]
